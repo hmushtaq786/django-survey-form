@@ -26,5 +26,5 @@ def get_name(request):
     # if a GET (or any other method) we'll create a blank form
     else:
         form = SurveyForm()
-
+    # embed SurveyForm into the html page using jinja
     return render(request, 'index.html', {'form': form})
